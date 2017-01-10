@@ -1,0 +1,97 @@
+<!doctype html>
+<html ng-app="ngApartments" ng-controller="apartmentsController">
+
+<head>
+    <title>Rent Rent apartments</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> </head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <!--	Nav Bar-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header"> <a class="navbar-brand" href="#">High Street Luxury Apartments for Rent</a> </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Min and Max Price Selection -->
+        <div class="col-sm-12 price-form">
+            <div class="row price-form-row" ng-if="!addListing">
+                <div class="col-sm-6">
+                    <div class="input-group"> <span class="input-group-addon">Min Price</span>
+                        <select name="minPrice" id="minPrice" ng-model="priceInfo.min" class="form-control">
+                            <option value="100000">SEK 100,000</option>
+                            <option value="200000">SEK 200,000</option>
+                            <option value="300000">SEK 300,000</option>
+                            <option value="400000">SEK 400,000</option>
+                            <option value="500000">SEK 500,000</option>
+                            <option value="600000">SEK 600,000</option>
+                            <option value="700000">SEK 700,000</option>
+                            <option value="800000">SEK 800,000</option>
+                            <option value="900000">SEK 900,000</option>
+                            <option value="1000000">SEK 1,000,000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group"> <span class="input-group-addon">Max Price</span>
+                        <select name="maxPrice" id="maxPrice" ng-model="priceInfo.max" class="form-control">
+                            <option value="100000">SEK 100,000</option>
+                            <option value="200000">SEK 200,000</option>
+                            <option value="300000">SEK 300,000</option>
+                            <option value="400000">SEK 400,000</option>
+                            <option value="500000">SEK 500,000</option>
+                            <option value="600000">SEK 600,000</option>
+                            <option value="700000">SEK 700,000</option>
+                            <option value="800000">SEK 800,000</option>
+                            <option value="900000">SEK 900,000</option>
+                            <option value="1000000">SEK 1,000,000</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--	Real Estate Listings-->
+    <div class="container">
+        <div class="col-sm-4" ng-repeat="apartment in apartments | apartmentFilter:priceInfo">
+            <div class="thumbnail"> <img ng-src="images/{{apartment.image}}.jpg" alt="apartments and houses">
+                <div class="caption">
+                    <div ng-hide="showDetails === true">
+                        <h3>
+						<i class="glyphicon glyphicon-tag"></i> {{apartment.price | currency: 'SEK '}}
+						</h3>
+                        <h4><i class="glyphicon glyphicon-home"></i> 	  {{apartment.address}} 
+                <span class="label label-primary label-sm">{{apartment.type}}</span>
+              </h4> </div>
+                    <button class="btn btn-xs btn-success" ng-hide="showDetails === true" ng-click="showDetails = !showDetails"> Details </button>
+                    <button class="btn btn-xs btn-danger" ng-show="showDetails === true" ng-click="showDetails = !showDetails"> Close </button>
+                    <div class="details" ng-show="showDetails === true">
+                        <h4>
+                <span class="label label-primary">Beds: {{apartment.details.bedrooms}}
+                </span>
+                <span class="label label-primary">Baths: {{apartment.details.bathrooms}}
+                </span>
+                <span class="label label-primary">Area: {{apartment.details.area}}
+                </span>
+              </h4>
+                        <p>{{apartment.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/apartmentController.js"></script>
+<script src="scripts/apartmentFactory.js"></script>
+<script src="scripts/apartmentFilter.js"></script>
+
+</html>

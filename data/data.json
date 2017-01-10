@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1
+        , "type": "Condo"
+        , "price": 220000
+        , "address": "2193 Grove Street"
+        , "description": "Excellent place, really nice view!"
+        , "details": {
+            "bedrooms": 2
+            , "bathrooms": 1.5
+            , "area": 900
+        }
+        , "image": "crib-1"
+  }
+			, {
+        "id": 2
+        , "type": "House"
+        , "price": 410500
+        , "address": "7823 Winding Way"
+        , "description": "Beautiful home with lots of space for a large family."
+        , "details": {
+            "bedrooms": 4
+            , "bathrooms": 3
+            , "area": 2100
+        }
+        , "image": "crib-2"
+  }
+			, {
+        "id": 3
+        , "type": "Duplex"
+        , "price": 395000
+        , "address": "8344 River Lane"
+        , "description": "Great neighbourhood and lot's of nice green space."
+        , "details": {
+            "bedrooms": 3
+            , "bathrooms": 2.5
+            , "area": 1500
+        }
+        , "image": "crib-3"
+  }
+			, {
+        "id": 4
+        , "type": "House"
+        , "price": 755990
+        , "address": "7807 Forest Avenue"
+        , "description": "Best house on the block!"
+        , "details": {
+            "bedrooms": 6
+            , "bathrooms": 4.5
+            , "area": 3200
+        }
+        , "image": "crib-4"
+  }
+			, {
+        "id": 5
+        , "type": "Condo"
+        , "price": 310500
+        , "address": "1857 Andover Court"
+        , "description": "Nice little condo with room to grow."
+        , "details": {
+            "bedrooms": 2
+            , "bathrooms": 1.5
+            , "area": 1000
+        }
+        , "image": "crib-5"
+  }
+			, {
+        "id": 6
+        , "type": "House"
+        , "price": 500000
+        , "address": "7398 East Avenue"
+        , "description": "You'll love the view!"
+        , "details": {
+            "bedrooms": 4
+            , "bathrooms": 2.5
+            , "area": 1700
+        }
+        , "image": "crib-6"
+  }
+
+    , {
+        "id": 7
+        , "type": "House"
+        , "price": 600000
+        , "address": "5588 Oxford Avenue"
+        , "description": "A well-presented house situated in a sought-after central location in Oxford City Center."
+        , "details": {
+            "bedrooms": 8
+            , "bathrooms": 3
+            , "area": 3200
+        }
+        , "image": "crib-7"
+  }
+
+    , {
+        "id": 8
+        , "type": "House"
+        , "price": 700000
+        , "address": "7398 Headington Road"
+        , "description": "We'll preserved especially good if you're looking for a winter cottage"
+        , "details": {
+            "bedrooms": 4
+            , "bathrooms": 1
+            , "area": 1700
+        }
+        , "image": "crib-8"
+  }
+
+    , {
+        "id": 9
+        , "type": "House"
+        , "price": 1000000
+        , "address": "3366 Ocean Street"
+        , "description": "You'll love the view by the Ocean"
+        , "details": {
+            "bedrooms": 6
+            , "bathrooms": 2
+            , "area": 5700
+        }
+        , "image": "crib-9"
+  }
+
+
+	]
