@@ -1,4 +1,4 @@
-#Jump Start JavaScript ES5
+#Rental Houses
 ###**Getting started**
 ###Technologies Used
 ####HTML5, CSS3, Angular.js 1.5, Bootstrap 3.3, Photoshop, JSON
