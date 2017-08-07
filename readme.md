@@ -7,10 +7,7 @@
  - Run :  `Brackets .`
  - Open:  `Index.html`
  - Open:  `Live Preview`  
- 
+   - [View Demo](http://getwebem.com/luxury-apartments/)
  <br/><br/>
-![pic1](https://raw.githubusercontent.com/getwebem/README/master/luxury-apartments/Screen%20Shot%202017-03-13%20at%2011.42.14.png)
-<br/><br/>
-
-![pic2](https://raw.githubusercontent.com/getwebem/README/master/luxury-apartments/Screen%20Shot%202017-03-13%20at%2011.43.13.png)
+![pic1](https://raw.githubusercontent.com/getwebem/README/master/luxury-apartments/Screen%20Shot%202017-08-07%20at%2014.29.06.png)
 <br/><br/>
